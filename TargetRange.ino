@@ -5,7 +5,7 @@
 // The parameters of the game are set in the Game Parameters section below.
 
 ///---------------------------------------------------------------------------------------------------------
-//    LTTO set up
+// LTTO set up
 #define DEBUG
 #define EI_ARDUINO_INTERRUPTED_PIN                      // This tells the ISR routine which was the last Pin that changed
 #define IRTxPin 2                                       // Infrared LED Emitter Transmit Pin
@@ -17,7 +17,7 @@
 #define bluePin 6
 #define greenPin 5
 
-#define SpeakerPin 9   // FIX THIS to 9
+#define SpeakerPin 9                                    // This must be on pin 9 to take full advantage of speaker capabilities
 
 //---Color Code
 //Pregame: Blue
@@ -30,14 +30,13 @@
 #define GameLength 5                                    // How many targets before game over?
 #define MinWaitTime 3                                   // The minimum amount of time before the next target pops
 #define MaxWaitTime 6                                   // The maximum amount of time before the next target pops
-#define TargetTime 1.5                                  // How many seconds is the target available to shoot?
+#define TargetTime 2.0                                  // How many seconds is the target available to shoot?
 #define BeaconTime 0.25                                  // How many seconds delay between proximity beacons?
 
 // Includes
 #include <EnableInterrupt.h>                            //  This is required for the LTTO libary to work.  https://github.com/GreyGnome/EnableInterrupt
 #include <LTTO.h>                                       //  This adds the LTTO library to the sketch
 #include <millisDelay.h>                                //  This adds the millisDelay library to the sketch, used for simple timer code
-//#include <pitches.h>                                    //  This adds the tone frequencies that corresond to A-G notes
 
 // Initiate Variables
 int PlayerScore = 0;                                    // How many targets has the player successfully hit?
