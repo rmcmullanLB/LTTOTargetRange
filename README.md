@@ -2,10 +2,12 @@
 
 Description
 
-Lazer Tag Host
+Lazer Tag Target Range
 Copyright (c) 2019 Ryan McMullan
 
-Lazer Tag Host is compatible with Lazer Tag Team Ops taggers from Tiger, Nerf, and Hasbro. However, the authors have no affiliation with those companies and this software is not endorsed or condoned by them.  This includes the LTTO Deluxe, Drone, and Tag Master Blaster, as well as the Phoenix LTX and Lazer Tag Augmented Realtiy (LTAR).
+The Lazer Tag Target Range provides target shooting practice for your laser tagger.  It uses visual and audio cues to signal rest (red) time, followed by a target (green) period where you are to raise, aim, and fire.  If you hit in the allowed time (default to 2 sec), it flashes blue to show it, otherwise it returns to red.  After a number of rounds (default 5) it flashes your score, then returns to a pre-game mode.  Adjust game parameters in the code to adjust the length and difficulty of the game.
+
+Lazer Tag Target Range is compatible with Lazer Tag Team Ops taggers from Tiger, Nerf, and Hasbro. However, the authors have no affiliation with those companies and this software is not endorsed or condoned by them.  This includes the LTTO Deluxe, Drone, and Tag Master Blaster, as well as the Phoenix LTX and Lazer Tag Augmented Realtiy (LTAR).
 
 
 Hardware

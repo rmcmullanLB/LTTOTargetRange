@@ -122,14 +122,14 @@ void loop() {
     if (ltto.readMessageType() == TAG )               // readMessageType() returns the type of Message (TAG, BEACON, PACKET, DATA, CHECKSUM)
     {
       // First report who shot it.
-/*      Serial.print(F("\nTag - "));                    // Give us a read out of who hit it
+      Serial.print(F("\nTag - "));                    // Give us a read out of who hit it
       Serial.print("Team #: ");
       Serial.print(ltto.readTeamID() );               // readTeamID() returns the teamID (0 = None, 1 = team1, 2 = team2, 3 = team3)
       Serial.print(F("\tPlayer #: "));
       Serial.print(ltto.readPlayerID() );             // readPlayerID() returns the playerID (Player # 1 through 8)
       Serial.print(F("\tShotStrength: "));
       Serial.print(ltto.readShotStrength() );         // readShotStrength() returns the shotStrength (value 1 through 4, where 1 is a normal tag - non mega)
-*/
+
       // If it's a TAG then react below based on the current state of the game.
       switch (GameState) {                            // The effect of an incoming tag depends on the current Game State, combined with the timer justFinished section below
         case 0:                                       // If in pre-game mode, start the game
